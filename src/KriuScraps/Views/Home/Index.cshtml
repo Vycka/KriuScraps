@@ -4,6 +4,10 @@
     ViewBag.Title = "Kriu";
 }
 
-@Html.Raw(@Model.Name) <br/><br />
-@Html.Raw(@Model.Translation) <br/><br />
-@Html.Raw(@Model.Definition) <br/><br />
+<div class="word-definition">
+    <h1>@Html.Raw(@Model.Name)</h1>
+    <p>@Html.Raw(@Model.Translation)</p>
+    <blockquote>
+        @Html.Raw(@Model.Definition)
+    </blockquote>
+</div>

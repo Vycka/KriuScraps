@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.EnterpriseServices;
 using System.Linq;
 using System.Web.Mvc;
 using KriuClient;
@@ -9,7 +8,7 @@ namespace KriuScraps.Controllers
 {
     public class HomeController : Controller
     {
-        private static readonly Random Random = new Random(42);
+        private static readonly Random Random = new Random();
 
         //
         // GET: /Home/
